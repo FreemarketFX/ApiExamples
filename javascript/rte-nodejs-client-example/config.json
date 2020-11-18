@@ -1,0 +1,10 @@
+{
+    "identityProviderBaseUrl":"https://qa-identity.wearefreemarket.com",
+    "clientId": "internal",
+    "clientSecret": "client secret",
+    "username": "username",
+    "password": "********",
+    "apiV1BaseUrl": "https://qa.wearefreemarket.com/api",
+    "apiV2BaseUrl": "https://fmfx-qa-publicapi-appsvc.azurewebsites.net",
+    "accountId": 13611
+}
