@@ -5,6 +5,9 @@
 * This is a nodejs script so nodejs need to be installed on the machine
 * all packages from packages.json needs to be installed
 
+## Note:
+
+* User used in config.json needs to have a customer access to used account and used account needs to be correctly configured for RTE. Contact wearefreemarket support to ensure your account is coorectly configured for RTE.
 
 ## Steps to run:
 
