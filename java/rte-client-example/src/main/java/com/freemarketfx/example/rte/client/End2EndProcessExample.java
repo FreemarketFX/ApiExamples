@@ -119,7 +119,7 @@ public class End2EndProcessExample {
 		System.out.println("Checking business hours");
 
 		GetBusinessHoursResponse response = gson.fromJson(
-			Request.get(apiV2BaseUrl + "/v2/BusinessHours")
+			Request.get(apiV2BaseUrl + "/v2/BusinessHours/RTE")
 				.addHeader(HttpHeaders.AUTHORIZATION, "Bearer " + accessToken)
 				.execute()
 				.returnContent().asString(), 
