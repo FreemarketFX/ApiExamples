@@ -20,8 +20,11 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - run: cd javascript/rte-nodejs-client-example
+
+    
     - uses: actions/checkout@v3
+    
+    - run: cd javascript/rte-nodejs-client-example
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
