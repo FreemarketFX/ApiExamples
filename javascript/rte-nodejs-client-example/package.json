@@ -3,7 +3,8 @@
   "name": "asp.net",
   "private": true,
   "scripts": {
-    "nodejsRteClientExample": "node runExample.js"
+    "nodejsRteClientExample": "node runExample.js",
+    "test": ""
   },
   "devDependencies": {},
   "dependencies": {
