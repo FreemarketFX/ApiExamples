@@ -29,7 +29,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: javascript/rte-nodejs-client-example/package-lock.json
-    - run: cd ./javascript/rte-nodejs-client-example
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+
+    - run: |
+        cd ./javascript/rte-nodejs-client-example
+        npm ci
+    - run:  |
+        cd ./javascript/rte-nodejs-client-examplen
+        pm run build --if-present
+    - run:  |
+        cd ./javascript/rte-nodejs-client-example
+        npm test
