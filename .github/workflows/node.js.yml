@@ -22,14 +22,14 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - run: cd javascript/rte-nodejs-client-example
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: javascript/rte-nodejs-client-example/package-lock.json
-
+    - run: cd ./javascript/rte-nodejs-client-example
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
