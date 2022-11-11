@@ -34,8 +34,8 @@ jobs:
         cd ./javascript/rte-nodejs-client-example
         npm ci
     - run:  |
-        cd ./javascript/rte-nodejs-client-examplen
-        pm run build --if-present
+        cd ./javascript/rte-nodejs-client-example
+        npm run build --if-present
     - run:  |
         cd ./javascript/rte-nodejs-client-example
         npm test
